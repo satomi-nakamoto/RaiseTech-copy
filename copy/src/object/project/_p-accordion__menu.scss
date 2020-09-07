@@ -1,0 +1,38 @@
+.p-popUpMenus {
+
+  .p-popUpMenu {
+
+    @include pc {
+      display: inline-block; //横並びにする
+      position: relative; //サブメニュー表示の基準位置に設定
+
+    }
+
+    >a {
+
+      @include pc {
+        padding-left: 7px;
+        padding-right: 7px;
+        line-height: 70px;
+        display: block;
+        /* ★4:項目内全域をリンク可能にする */
+      }
+    }
+  }
+
+}
+
+/* ---------------------------------- */
+/* ▼サブメニューがある場合に開く処理 */
+/* ※サブメニューが1階層しか存在しない場合の記述 */
+/* ---------------------------------- */
+ul.p-popUpMenus li:hover .p-subMenu {
+
+  @include pc {
+    display: block;
+    z-index: 10;
+  }
+  
+}
+
+

@@ -1,0 +1,49 @@
+
+.c-greenBox {
+  border-radius: 5px;
+}
+
+//ハンバーグメニューボタン
+
+.c-menuClose {
+  display: none; //最初バツ印は非表示
+}
+
+.is_open .c-btnOpen {
+  display: none;  //is_openの時、ハンバーグメニューボタンを非表示
+}
+
+.is_open .c-menuClose {
+  display: block;  //is_openの時、バツ印を表示
+}
+
+//サブメニュー
+
+.c-subClose1,
+.c-subClose2,
+.c-subClose3 {
+  display: none; //最初マイナスアイコンは非表示
+}
+
+.is_sub1_open .c-subOpen1,
+.is_sub2_open .c-subOpen2,
+.is_sub3_open .c-subOpen3 {
+display: none; //is_sub_openの時、プラスボタンを非表示
+}
+
+.is_sub1_open .c-subClose1,
+.is_sub2_open .c-subClose2,
+.is_sub3_open .c-subClose3 {
+  display: block; //is_sub_openの時、マイナスボタンを表示
+  }
+
+  .c-subOpen1,
+  .c-subOpen2,
+  .c-subOpen3,
+  .c-subClose1,
+  .c-subClose2,
+  .c-subClose3 {
+    @include pc {
+      display: none;
+    }
+  }

@@ -1,0 +1,13 @@
+.p-menu {
+  display: none;
+
+  @include pc {
+    display: grid;
+    justify-content: end;
+    align-content: center;
+  }
+}
+
+.is_open .l-menu {
+  display: block;
+}

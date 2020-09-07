@@ -1,0 +1,38 @@
+/*
+テーマ名：RaiseTech
+テーマURI：https://raisetech.com/
+著者：Satomi Nakamoto
+著者URI：https://raisetech.com/
+説明：
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color:#000000;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+//メディアクエリ
+
+$tab: 768px; // タブレット
+$pc: 1200px; // PC 
+
+@mixin tab {
+  @media (min-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+

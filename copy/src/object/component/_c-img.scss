@@ -1,0 +1,43 @@
+.c-figure img.hero01,
+img.hero02 {
+  zoom: 38%;
+
+  @include tab {
+    zoom: 102%;
+  }
+}
+
+.c-figure img.hero03 {
+  zoom: 70%;
+
+  @include tab {
+    zoom: 102%;
+  }
+}
+
+.c-menuOpen,
+.c-menuClose {
+  
+    width: 50px;
+  height: 50px;
+
+  @include pc {
+    display: none;
+  }
+  
+}
+
+.c-icon01, 
+.c-icon03 {
+  padding: 50px;
+} 
+
+.c-icon02 {
+    padding: 50px 30px;
+  }
+
+.c-popUpMenus img {
+  width: 45px;
+  height: 45px;
+}
+

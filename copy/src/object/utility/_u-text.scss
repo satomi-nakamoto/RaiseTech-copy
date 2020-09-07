@@ -1,0 +1,120 @@
+.u-hello {
+  font-size: 0.812rem; //13px
+  font-weight: bold;
+  line-height: 1.7;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @include tab {
+    font-size: 0.875rem; //14px
+    line-height: 1.9;
+    padding: 10px 30px;
+  }
+}
+
+.u-greenBox {
+  font-size: 0.875rem; 
+  font-weight: bold;
+
+  @include tab {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+.u-lessonPoint {
+
+  & h2,
+  p {
+    color: #fff;
+  }
+
+  & h2 {
+    font-size: 1.8rem;
+  }
+
+  & p {
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 1.5;
+  }
+}
+
+.u-footerHead {
+  color: #fff;
+}
+
+.u-about {
+  font-size: 0.875rem;
+}
+
+.u-copyright {
+  font-size: 0.687rem;
+  color: rgba(49, 48, 48, 0.808);
+}
+
+.u-popUpMenus {
+  font-size: 1rem;
+  font-weight: bolder;
+  padding-top: 20px;
+
+  @include pc {
+    padding-top: 0;
+  }
+
+  .u-popUpMenu {
+    padding-bottom: 15px;
+    padding-left: 10px;
+
+    @include pc {
+      padding: 0 10px;
+      line-height: 70px;
+    }
+  }
+}
+
+.u-pum05 a {
+  @include pc {
+     color: #fff;
+  }
+ 
+}
+
+.u-popSubMenu {
+  padding: 10px 10px 10px 25px;
+  font-size: 0.875rem;
+
+  @include pc {
+    padding: 0 0 0 25px;
+  }
+
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    color: rgb(63, 62, 62);
+  }
+}
+
+
+.u-pum05 {
+  color: #fff;
+
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    color: #fff;
+  }
+}
+
+.u-header span {
+  font-weight: bold;
+  font-size: 0.875rem; //14px
+  line-height: 1.2;
+
+  strong {
+    font-size: 1.125rem; //18px
+  }
+}

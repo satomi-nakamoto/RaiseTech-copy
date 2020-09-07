@@ -1,0 +1,11 @@
+nav.p-menu {
+  z-index: 100;
+}
+
+.p-pum05 a {
+  display: none;
+
+  @include pc {
+    display: block;
+  }
+}

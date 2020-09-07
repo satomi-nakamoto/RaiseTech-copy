@@ -1,0 +1,55 @@
+
+
+.u-intoro {
+  background-color: #fff;
+}
+
+.u-hello {
+  width: 100%;
+}
+
+.u-greenBox {
+  background-color: #a2d729;
+  padding:15px;
+}
+
+.u-lessonPoints {
+  background-color:  #000;
+}
+
+.u-icon {
+  background-color: #fff;
+}
+
+.u-footerHead {
+  background-color: rgb(6, 6, 53);
+}
+
+.u-popUpMenus {
+  background-color: #fff;
+}
+
+.u-pum05 {
+  @include pc {
+    background-color: #369eb3;
+  }
+}
+
+.u-subMenu {
+  @include pc {
+    background-color: #eef5f5; 
+  }
+  
+}
+
+.u-popUpMenu a:hover {
+  @include pc {
+     background-color: #d7fafa; 
+  }
+}
+
+  .u-pum05 a:hover {
+    background-color: #369eb3;
+  }
+ 
+

@@ -1,0 +1,48 @@
+.p-subMenu {
+  display: none;
+
+  @include pc {
+    margin: 0px;
+    // /* ★2:サブメニュー外側の余白(ゼロ) */
+    padding: 0;
+    // /* ★3:サブメニュー内側の余白(ゼロ) */
+    position: absolute;
+    /* ★4:絶対配置にする */
+    }
+
+}
+
+.is_sub1_open .p-popSubMenu1,
+.is_sub2_open .p-popSubMenu2,
+.is_sub3_open .p-popSubMenu3 {
+  display: grid;
+}
+
+
+.p-psm03,
+.p-psm04 {
+  display: none;
+
+  @include pc {
+    display: block;
+  }
+}
+
+
+.p-popSubMenu1 {
+  @include pc {
+    width: 280px;
+  }
+}
+
+.p-popSubMenu2 {
+  @include pc {
+    width: 250px;
+  }
+}
+
+.p-popSubMenu3 {
+  @include pc {
+    width: 180px;
+  }
+}
